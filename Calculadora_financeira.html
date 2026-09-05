@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Calculadora_financeira.js">
-    <link rel="stylesheet" href="./Calculadora_financeira.css">
     <title>Calculadora Financeira</title>
 </head>
 <body>
-    coloque aqui o valor da  hora  do  estacionamento: <input type="number" id="ipt_valor_hora"> <br>
-    coloque aqui a quantidade de vagas do seu estacionamento: <input type="number" id="ipt_tamanha_estacionamento"> <br>
-    coloque o tipo de horário de funcionamento do estacionamento: <select id="ipt_horarios_funcionamento"> <br>
-        <option value= 24 >integral</option>
-        <option value= 12> meio período</option>
-        <option value= 8 >horário comercial</option>
-        <option value= 6> meio turno</option>
-    </select>
-    insira a quantidade de horas ociosas do seu estacionamento
+    coloque aqui o valor da hora do estacionamento: <input type="number" id="ipt_valor_hora"> <br> <br>
+    coloque aqui a quantidade de vagas do seu estacionamento: <input type="number" id="ipt_tamanho_estacionamento"> <br> <br>
+    coloque o tipo de horário de funcionamento do estacionamento: <select id="ipt_horarios_funcionamento"> <br> <br>
+        <option value="24">integral</option>
+        <option value="12">meio período</option>
+        <option value="8">horário comercial</option>
+        <option value="6">meio turno</option>
+    </select> <br> <br>
+    insira a quantidade de horas ociosas do seu estacionamento: <input type="number" id="ipt_horas_ociosas"> <br> <br>
+    insira a quantidade de dias funcionais do mês: <input type="number" id="ipt_dias_mes"> <br> <br>
+
+    desconto aplicado no preço durante as horas ociosas (%): <input type="number" id="ipt_desconto_ocioso"> <br> <br>
+    estimativa de quanto das horas ociosas passam a ser usadas com o desconto (%): <input type="number" id="ipt_aumento_uso"> <br>
+
     <div id="exibir"></div>
-    <button onclick="calcular()">Fazer o calculo estimado</button>
+    <button onclick="calcular()">testar</button>
+
+    <script src="./Calculadora_financeira.js"></script>
 </body>
 </html>
